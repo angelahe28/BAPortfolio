@@ -55,7 +55,7 @@ By understanding the factors that drive MSRP, manufacturers can refine their pri
 
 **Goal**: To predict booking cancellations accurately and provide actionable insights for hotel management to optimize resource allocation, improve revenue forecasting, and enhance customer retention rates by identifying high-risk bookings.
 
-**Skills*: Data Cleaning (address missing data, encode categorical variables, normalize features like lead time and booking changes), Exploratory Data Analysis (EDA), Logistic Regression, Random Forest, XG Boost, kNN, Hyperparameter Tuning (Grid Search for Random Forest and XG Boost)
+**Skills**: Data Cleaning (address missing data, encode categorical variables, normalize features like lead time and booking changes), Exploratory Data Analysis (EDA), Logistic Regression, Random Forest, XG Boost, kNN, Hyperparameter Tuning (Grid Search for Random Forest and XG Boost)
 
 Model	Accuracy	F1-Score	Precision	Recall
 Logistic Regression	85%	0.83	0.82	0.84
