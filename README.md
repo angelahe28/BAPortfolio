@@ -57,12 +57,6 @@ By understanding the factors that drive MSRP, manufacturers can refine their pri
 
 **Skills**: Data Cleaning (address missing data, encode categorical variables, normalize features like lead time and booking changes), Exploratory Data Analysis (EDA), Logistic Regression, Random Forest, XG Boost, kNN, Hyperparameter Tuning (Grid Search for Random Forest and XG Boost)
 
-Model	Accuracy	F1-Score	Precision	Recall
-Logistic Regression	85%	0.83	0.82	0.84
-Random Forest	88%	0.86	0.85	0.87
-XGBoost (Best Model)	90%	0.88	0.87	0.89
-k-Nearest Neighbors	83%	0.80	0.79	0.81
-
 
 
 
