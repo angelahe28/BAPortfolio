@@ -47,6 +47,23 @@ By understanding the factors that drive MSRP, manufacturers can refine their pri
   * R² = 0.85: The final model explains **85%** of the variance in MSRP, significantly improving predictive accuracy.
   * SSE = 15,000: SSE was reduced by **40%**, demonstrating a better fit.
 
+###Predicting Hotel Booking Cancellations with Machine Learning
+
+**Code**:  [**Hotel Booking Cancellation Analysis**](https://github.com/angelahe28/BAPortfolio/blob/main/CIS_508_Hands_on_Exercise_4%20(3).ipynb)
+
+**Project Overview**: In this project, I developed a machine learning model to predict hotel booking cancellations, enabling improved operational planning and customer retention stategies. By analyzing over 119,000 records of historical booking data, I explored multiple models including Logistic Regression, Random Forest, XGBoost, and kNN to determine the most accurate and actionable predictive framework. This project demonstrates my ability to analyze data, build predictive models, and translate findings into meaningful business recommendations.
+
+**Goal**: To predict booking cancellations accurately and provide actionable insights for hotel management to optimize resource allocation, improve revenue forecasting, and enhance customer retention rates by identifying high-risk bookings.
+
+**Skills*: Data Cleaning (address missing data, encode categorical variables, normalize features like lead time and booking changes), Exploratory Data Analysis (EDA), Logistic Regression, Random Forest, XG Boost, kNN, Hyperparameter Tuning (Grid Search for Random Forest and XG Boost)
+
+Model	Accuracy	F1-Score	Precision	Recall
+Logistic Regression	85%	0.83	0.82	0.84
+Random Forest	88%	0.86	0.85	0.87
+XGBoost (Best Model)	90%	0.88	0.87	0.89
+k-Nearest Neighbors	83%	0.80	0.79	0.81
+
+
 
 
 
