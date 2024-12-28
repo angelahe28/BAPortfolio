@@ -55,9 +55,33 @@ By understanding the factors that drive MSRP, manufacturers can refine their pri
 
 **Goal**: To predict booking cancellations accurately and provide actionable insights for hotel management to optimize resource allocation, improve revenue forecasting, and enhance customer retention rates by identifying high-risk bookings.
 
-**Skills**: Data Cleaning (address missing data, encode categorical variables, normalize features like lead time and booking changes), Exploratory Data Analysis (EDA), Logistic Regression, Random Forest, XG Boost, kNN, Hyperparameter Tuning (Grid Search for Random Forest and XG Boost)
+**Skills**: Data Cleaning (addressing missing data, encoding categorical variables, normalize features like lead time and booking changes), Exploratory Data Analysis (EDA), Logistic Regression, Random Forest, Hyperparameter Tuning 
 
+**Technology**: Python, Pandas, NumPy, XGBoost, Seaborn
 
+**Results**: Four classification models were developed and compared based on key performance metrics: accuracy, F1-score, precision, and recall. 
 
+| **Model**              | **Accuracy** | **F1-Score** | **Precision** | **Recall** |
+|-------------------------|--------------|--------------|---------------|------------|
+| Logistic Regression     | 85%          | 0.83         | 0.82          | 0.84       |
+| Random Forest           | 88%          | 0.86         | 0.85          | 0.87       |
+| XGBoost (Best Model)    | 90%          | 0.88         | 0.87          | 0.89       |
+| k-Nearest Neighbors     | 83%          | 0.80         | 0.79          | 0.81       |
 
+XGBoost emerged as the top-performing model, achieving the highest accuracy and F1-score of 90% and 0.88. Its balanced precision and recall makes it suitable for predicting cancellations while minimizing misclassifications. Logistic Regression and Random Forest also performed well with a slightly lower accuracy and F1-score. 
 
+The most influential predictors of cancellations are lead time, booking changes, and deposit type. Longer lead times and non-refundable deposit types were strongly associated with higher cancellation rates. 
+
+Using a probability threshold of 0.5, our XGBoost model demonstrated a well-balanced performance, correctly identifying most cancellations.
+
+Trade-Offs in Errors Inform Strategy:
+The analysis of false positives (incorrectly predicted cancellations) and false negatives (missed cancellations) highlights specific areas where resources can be optimized. What this means in the business aspect is that by balancing precision and recall, our model can minimize costyl misallocations while maximizing revenue opportunites.
+
+**Business Recommendations**
+1) **Dynamic Overbooking Policies**
+- Use cancellation probabilities to inform overbooking levels for high-risk bookings, ensuring maximum occupancy without exceeding capacity (example: intentially overbook at 10-15% during peak seasons based on predicted cancellation rates, capturing additional revenue)
+2) **Targeted Rentention Efforts**
+- Provide incentives (example: discounts, upgrades, loyalty points) to customers flagged as likely to cancel
+- Focus rentention efforts on bookings with long lead times since these are associated with higher cancellation probabilities.
+3) **Protifability and Cost Saving Strategies**
+- By minimizing unexpected cancellations, the model ensures that fewer rooms go unccoupies, directly boosting profitablity
