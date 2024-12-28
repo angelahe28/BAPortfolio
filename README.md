@@ -47,7 +47,7 @@ By understanding the factors that drive MSRP, manufacturers can refine their pri
   * R² = 0.85: The final model explains **85%** of the variance in MSRP, significantly improving predictive accuracy.
   * SSE = 15,000: SSE was reduced by **40%**, demonstrating a better fit.
 
-###Predicting Hotel Booking Cancellations with Machine Learning
+### Predicting Hotel Booking Cancellations with Machine Learning
 
 **Code**:  [**Hotel Booking Cancellation Analysis**](https://github.com/angelahe28/BAPortfolio/blob/main/CIS_508_Hands_on_Exercise_4%20(3).ipynb)
 
